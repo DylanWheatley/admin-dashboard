@@ -56,10 +56,12 @@ table {
 html, body {
     height: 100%;
 }
+
+/* MAIN GRID CSS */
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
     border: var(--border-color);
     height: 100%;
 }
@@ -74,4 +76,42 @@ html, body {
     grid-column: 2/6;
     grid-row: 1/2;
     border:  var(--border-color);
+}
+
+.title {
+    font-size: 1.5rem;
+    
+}
+
+/* SIDEBAR CSS */
+
+.links {
+    padding: 2rem;
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    row-gap: 30px;
+}
+
+.title-holder {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 20px;
+}
+
+.placeholders {
+    width: 1rem;
+    height: 1rem;
+    border: var(--border-color);
+    background-color: black;
+}
+
+.dash-place {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: black;
+}
+
+.spacer {
+    margin-top: 2rem;
 }
